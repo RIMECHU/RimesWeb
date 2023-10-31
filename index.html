@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>不朽青苍</title>
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-app-capable" content="yes">
+    <meta name="apple-mobile-app-status-bar-style" content="black">
+   
+    <meta name="description" content="一个以不朽青苍为名的人类">
+    <meta name="keywords" content="二次元，前端，编程，绘画，钢琴">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="cononico">
+    <meta name="application-name" content="Cononico" >
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/process.css">
+    <link rel="shortcut icon"  type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/iconfont.css" />
+    <link rel="stylesheet" href="font1/iconfont.css" />
+<!--    <link rel="stylesheet" href="css.css" />-->
+    
+    <script type="text/javascript">
+        //设定rem值
+        document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth/20 + 'px';
+    </script>
+</head>
+<body>
+<!--侧边栏-->
+
+
+
+
+
+<div class="music-container" id="music-container">
+    <!-- 音乐信息 -->
+    <div class="music-info">
+        <!-- 音乐标题 -->
+        <h4 id="title">hot girl bummer</h4>
+        <!-- 音乐播放进度条 -->
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+        </div>
+    </div>
+
+    <!-- 默认第一首音乐 -->
+    <audio src="music/hot girl bummer.mp3" id="audio"></audio>
+
+    <!-- 音乐封面 -->
+    <div class="img-container">
+        <img src="img/hot girl bummer.jpg" alt="music-cover" id="music-cover">
+    </div>
+    <!-- 播放控制 -->
+    <div class="navigation">
+        <button id="prev" class="action-btn">
+            <i class="fas fa-backward"></i>
+        </button>
+        <button id="play" class="action-btn action-btn-big">
+            <i class="fas fa-play"></i>
+        </button>
+        <button id="next" class="action-btn">
+            <i class="fas fa-forward"></i>
+        </button>
+    </div>
+</div>
+	<header class="head">
+        <div class="head_logo_div">
+            <img class="logo_img" src="images/upload/head1.jpg"></a>
+        </div>
+        <div class="head_nav_div">
+             <nav class="head_nav">
+                <ul id="nav_ul">
+                    <li class="nav_li_on nav_ul_li">主页</li>
+                    <li class="nav_ul_li">学习の心路历程</li>
+                    <li class="nav_ul_li">技能</li>
+                    <li class="nav_ul_li">爱好</li>
+                    <li class="nav_ul_li">联系方式</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="clear"></div>
+    </header>
+    
+    <ul class="float_btn" id="float_btn">
+        <li class="btn_on"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    
+    <div class="wrapBox" id="wrapBox">
+        <div class="box">
+            <img class="box_bg" src="images/upload/ip.jpg">
+            <div class="box01_content">
+                <div class="head_div">
+                    <div class="cycle_item">
+                        <a href="https://github.com/Reol-Ado" class="github_a" id="github_a" target="_blank">
+                            <span class="github_icon"></span>
+                            <span class="github_text"><p class="item_name">GitHub</p></span>
+                        </a>
+                        <a href="https://music.163.com/#/user/home?id=289185953" class="weibo_a" id="weibo_a" target="_blank">
+                            <span class="icloud_icon"></span>
+                            <span class="icloud_text"><p class="item_name">网易云</p> </span>
+                        </a>
+                        <a href="https://space.bilibili.com/176337042" class="blog_a" id="blog_a" target="_blank">
+                            <span class="blog_icon"></span>
+                            <span class="blog_text"><p class="item_name"> bilibili</p></span>
+                        </a>
+
+                        <div class="green_cycle">
+                            <img class="green_cycle_img" src="images/icon/green_cycle.svg">
+                            <div class="yellow_cycle">
+                                <img class="yellow_cycle_img" src="images/icon/yellow_cycle.svg">
+                                <div class="blue_cycle">
+                                    <img class="blue_cycle_img" src="images/icon/blue_cycle.svg">
+                                    <div class="head_img_div">
+                                        <img class="head_img" src="images/upload/head1.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="title">ETERNAL BLUE</h1>
+                <h2 class="title_h2">我是追寻者</h2>
+                <div id="box01_text">
+                <p class="box01_p">想了解不朽的青苍</p>
+                <p class="box01_p">我们总会归来，这是我们的归属</p>
+                <p class="box01_p">去夺回那不朽青苍</p>
+                </div>
+            </div>
+            <div class="arrow_div">
+                <img class="arrow_img" src="images/icon/arrowhead.png">
+            </div>
+        </div>
+        
+        <div class="box">
+            <img class="box_bg" src="images/upload/pic_2.jpg">
+            
+            <div class="box02_content box_content">
+                <div id='bar_container' class="bar_container">
+                    <div class='bar mint' data-percent='70' data-skill='HTML5+CSS3'></div>
+                    <div class='bar red' data-percent='50' data-skill='JavaScript'></div>
+                    <div class='bar lila' data-percent='50' data-skill='Java'></div>
+                    <div class='bar orange' data-percent='50' data-skill='Python'></div>
+                    <div class='bar gray' data-percent='30' data-skill='C || C++'></div>
+                    <div class="bar blue" data-percent='50' data-skill='PS&AE&PR&AI'></div>
+                    <div class="bar green" data-percent='80' data-skill='绘画'></div>
+                </div>
+                <div id="box02_text">
+                    <h1>About Skill</h1>
+                    <div class="overline"></div>
+                    <p>2015，接触到各类Android软件</p>
+                    <p>当时被微信插件所吸引</p>
+                    <p>想根据自己的想法制作自己想要的软件</p>
+                    <p>可能是这些想法潜移默化</p>
+                    <p>2020,选择了计算机这个专业</p>
+                    <p>九月份开始学习到C语言</p>
+                    <p>2021，开始学习Java</p>
+                    <p>22年初，发现了Python作为第二语言的强大</p>
+                    <p>22年，9月开始学习JavaWeb</p>
+                    <p>关于未来...</p>
+                    <p>想成为一位二次元画师&游戏开发者</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            
+            <div class="arrow_div">
+                <img class="arrow_img" src="images/icon/arrowhead.png">
+            </div>
+            
+        </div>
+        
+        <div class="box">
+            <img class="box_bg" src="images/upload/pic_3.jpg">
+            
+            <div class="box_content box03_content">
+                <ul id="timeUl" class="timeUl">
+                    <li>
+                        <div>
+                            <h1>2013</h1>
+                            <p>开始接触画画</p>
+                            <p>那时候觉得会画画是一种让人很崇拜的事情</p>
+                            <p>没有很多烦恼</p>
+                            <p>可以画自己喜欢的人物角色<p>
+                            <p>后来又接触到素描和水彩</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h1>2016</h1>
+                            <p>放弃了以美术为主的学习</p>
+                            <p>自己还是选择了文化科中考</p>
+                            <p>三年画画时间学到了挺多</p>
+                            <p>后来放弃了继续去学习画画，从此荒废了</p>
+                        </div>
+                    </li>
+                    <li>
+                       <div>
+                            <h1>2017-2020</h1>
+                            <p>中考失败</p>
+                            <p>高考失败</p>
+                            <p>开始对自己心灰意冷</p>
+                        </div>
+                    </li>
+                    <li>
+                       <div>
+                            <h1>Future</h1>
+                            <p>这次考研，是为了给以前的自己一个结果</p>
+                            <p>也是给未来的自己一个结果</p>
+                        </div>
+                    </li>
+                </ul>
+                 <div class="left_div" id="left_div">
+                     <img class="left_arrow" src="images/icon/arrowleft.png">
+                 </div>
+                 <div class="right_div" id="right_div">
+                      <img class="right_arrow" src="images/icon/arrowright.png">
+                 </div>
+            </div>
+            
+             <div class="arrow_div">
+                <img class="arrow_img" src="images/icon/arrowhead.png">
+            </div>
+        </div>
+        
+        
+        <div class="box">
+            
+            <img class="box_bg" src="images/upload/吉他.png">
+            <div class="box_content box04_content">
+                <h1 class="box04_title">Something Of Hobby</h1>
+                <ul class="hobby_content">
+                    <li class="hobby_01">
+                        <div class="hobby_img_div">
+                            <div class="spinner spinner_01"></div>
+                            <div class="hobby_img">
+                                <img src="images/upload/lam1.png">
+                            </div>
+                            <div class="hobby_img_info">
+                                <h1>绘画</h1>
+                                <h2>手绘&CG</h2>
+                            </div>
+                        </div>
+                        <div class="hobby_text_div">
+                            <div class="hobby_img_info_mob">
+                                <h1>绘画/<a>手绘&CG</a></h1>
+                            </div>
+                            <p class="about_p">
+                                对于绘画的热爱来自于对ACG的热爱,小学时就开始拿着自动铅笔画游戏里的角色,
+                                把自己想学画画的想法也告诉了父母，所以学过一段时间.
+                            </p>
+                            <p>
+                                比较擅长铅笔手绘动漫人物和素描，水彩学过一段时间，现在在学习板绘.
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="hobby_02">
+                        <div class="hobby_img_div">
+                            <div class="spinner spinner_02"></div>
+                            <div class="hobby_img">
+                                <img src="images/upload/teio.jpg">
+                            </div>
+                            <div class="hobby_img_info">
+                                <h1>ACG</h1>
+                                <h2>动漫&视频</h2>
+                            </div>
+                        </div>
+                        <div class="hobby_text_div">
+                            <div class="hobby_img_info_mob">
+                                <h1>ACG/<a>动漫&视频</a></h1>
+                            </div>
+                            <p class="about_p">
+                                最喜欢的动漫应该就是赛马娘了，第一次有这么震撼我的动漫，能让我几刷，里面的人物都有自己鲜明的性格，
+                                在人物塑造方面很成功.
+                            </p>
+                            <p>
+                                动漫对我而言是和文学一样的文化,最具感染力的抒情方式,将来希望自己工作在二次元的领域.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="hobby_03">
+                        <div class="hobby_img_div">
+                            <div class="spinner spinner_03"></div>
+                            <div class="hobby_img">
+                                <img src="images/upload/reol.jpg">
+                            </div>
+                            <div class="hobby_img_info">
+                                <h1>音乐</h1>
+                                <h2>歌手&风格</h2>
+                            </div>
+                        </div>
+                        <div class="hobby_text_div">
+                            <div class="hobby_img_info_mob">
+                                <h1>音乐/<a>歌手&风格</a></h1>
+                            </div>
+                            <p class="about_p">
+                                小时候喜欢欧美歌曲，觉得节奏感很强，让人很轻松很欢快，在高二的时候偶然间认识了Reol，从此一发不可收拾的
+                                ，沉迷于她的声音当中
+                            </p>
+                            <p>
+                                在听到無能的钢琴曲之后久久不能释怀，所以自己买了一架电钢琴开始自学.
+                            </p>
+                        </div>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+             <div class="arrow_div">
+                <img class="arrow_img" src="images/icon/arrowhead.png">
+            </div>
+        </div>
+        
+        <foot id="foot" class="foot">
+            <h1 class="foot_title">Contact With Me</h1>
+            <div class="foot_info_main">
+                <ul>
+                    <li class="github_items">
+                        <a href="https://github.com/Reol-Ado" target="_blank">GitHub</a>
+                    </li>
+                    <li class="google_items">
+                        <a href="https://www.google.com.hk/" target="_blank">Google+</a>
+                    
+                    </li>
+                    <li class="twitter_items">
+                        <a href="https://twitter.com/7okaiteio" target="_blank">Twitter</a>
+                    
+                    </li>
+                    <li class="bilibili_items">
+                        <a href="https://space.bilibili.com/176337042/" target="_blank">bilibili</a>
+                    
+                    </li>
+                    <li class="icloud_items">
+                        <a href="https://music.163.com/#/user/home?id=289185953" target="_blank">网易云</a>
+                    
+                    </li>
+                    <li class="zhihu_items">
+                        <a href="https://www.zhihu.com/people/bei-fang-qi-ji-95" target="_blank">知乎</a>
+                    
+                     </li>
+                     <li class="blog_items">
+                        <a href="https://www.baidu.com/" target="_blank">博客</a>
+                    
+                     </li>
+                     <li class="email_items">
+                        <a href="https://mail.qq.com/" target="_blank">邮箱</a>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+
+            </div>
+            <div class="foot_power">
+                <h3>©2022 Tring
+                    <a href="" title="Night" target="_blank">じゃね</a>
+                    <a href="" title="IceEnd">不朽青苍</a>
+                    <a href="" title="beian" target="_blank">hard working</a>
+                </h3>
+            </div>
+        </foot>
+    </div>
+<script src="script.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+    
+</html>
+
+ 
